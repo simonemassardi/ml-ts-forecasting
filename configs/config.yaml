@@ -1,0 +1,38 @@
+# LSTM Traffic Forecasting Configuration
+
+# Data parameters
+data:
+  file_path: "data/traffic.csv"
+  sequence_length: 24  # Number of past hours to use for prediction
+  prediction_horizon: 1  # Number of hours to predict ahead
+  train_split: 0.7
+  val_split: 0.2
+  test_split: 0.1
+  normalize: true
+
+# Model parameters
+model:
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.2
+  learning_rate: 0.001
+
+# Training parameters
+training:
+  batch_size: 32
+  max_epochs: 100
+  patience: 10  # Early stopping patience
+  gradient_clip_val: 1.0
+
+# Logging
+logging:
+  log_every_n_steps: 10
+  save_top_k: 3
+
+# MLflow tracking
+mlflow:
+  experiment_name: "lstm_traffic_forecasting"
+  run_name: null  # Auto-generated if null
+  tracking_uri: "mlruns"  # Local tracking or remote URI
+  log_model: true
+  log_artifacts: true
