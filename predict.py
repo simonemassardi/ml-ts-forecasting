@@ -75,7 +75,11 @@ def make_predictions(
         Tuple of (predictions, actual_values, timestamps)
     """
     model.eval()
-    data_module.setup('test')
+    data_module.prepare_data()
+    
+    data_module.setup('fit')    # This fits the scaler on training data
+    data_module.setup('test')   # Now this can use the fitted scaler
+    
     test_loader = data_module.test_dataloader()
     
     predictions = []
