@@ -3,7 +3,7 @@
 # Data parameters
 data:
   file_path: "data/traffic.csv"
-  sequence_length: 24  # Number of past hours to use for prediction
+  sequence_length: 168  # Number of past hours to use for prediction
   prediction_horizon: 1  # Number of hours to predict ahead
   train_split: 0.7
   val_split: 0.2
