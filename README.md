@@ -2,6 +2,9 @@
 
 A PyTorch Lightning-based project for predicting traffic time series data using LSTM neural networks.
 
+![Static Badge](https://img.shields.io/badge/MLflow-grey?style=flat&logo=mlflow&logoColor=%230194E2&logoSize=auto&link=https%3A%2F%2Fmlflow.org%2Fdocs%2Flatest%2F)
+
+
 ## Project Structure
 
 ```
