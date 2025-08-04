@@ -83,7 +83,7 @@ class TrafficDataModule(L.LightningDataModule):
         self.traffic_data = self.traffic_data[~np.isnan(self.traffic_data)]
         
         # Store datetime for later reference
-        self.datetime_index = pd.to_datetime(df['DateTime'])
+        self.datetime_index = pd.to_datetime(df['DateTime'], format='mixed')
         
     def setup(self, stage: Optional[str] = None):
         """Setup datasets for training, validation, and testing."""
