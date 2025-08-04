@@ -117,6 +117,8 @@ def train_model(config_path: str = "configs/config.yaml", run_name: str = None):
         trainer = L.Trainer(
             max_epochs=config['training']['max_epochs'],
             callbacks=callbacks,
+            accelerator='mps',
+            devices=1,
             logger=logger,
             gradient_clip_val=config['training']['gradient_clip_val'],
             log_every_n_steps=config['logging']['log_every_n_steps'],
