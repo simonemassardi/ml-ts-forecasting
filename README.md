@@ -4,6 +4,9 @@ A PyTorch Lightning-based project for predicting traffic time series data using 
 
 ![Static Badge](https://img.shields.io/badge/MLflow-grey?style=flat&logo=mlflow&logoColor=%230194E2&logoSize=auto&link=https%3A%2F%2Fmlflow.org%2Fdocs%2Flatest%2F)
 
+![Static Badge](https://img.shields.io/badge/Lightning-grey?style=flat&logo=lightning&logoColor=%23792EE5&logoSize=auto&link=https%3A%2F%2Flightning.ai%2Fdocs%2Fpytorch%2Fstable%2F)
+
+
 
 ## Project Structure
 
